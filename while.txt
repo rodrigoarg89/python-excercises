@@ -1,0 +1,38 @@
+While
+
+Un while loop en Python se utiliza para ejecutar un bloque de código repetidamente mientras se cumpla una determinada condición. Esto es útil cuando no se conoce de antemano cuántas veces se debe ejecutar el código, ya que permite continuar iterando hasta que se cumpla la condición especificada.
+
+
+# Inicializa una variable para controlar el tiempo transcurrido
+elapsed_time = 0
+
+# Ejecute el loop mientras el tiempo transcurrido sea menor a 60 segundos
+while elapsed_time < 60:
+  # Aumente la variable elapsed_time en 1 segundo
+  elapsed_time += 1
+
+# Imprima un mensaje cuando el loop haya finalizado
+print("60 seconds have passed.")
+ 
+
+Otro ejemplo de cómo se podría usar un while loop en Python es para iterar sobre una lista y encontrar el primer elemento mayor a un valor dado:
+
+ 
+
+# Define una lista de números
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# Inicializa una variable para almacenar el resultado
+result = None
+
+# Itere sobre cada elemento en la lista
+while numbers:
+  # Obtenga el primer elemento de la lista
+  number = numbers.pop(0)
+  # Si el número es mayor a 5, asigne el número a la variable result y salga del loop
+  if number > 5:
+    result = number
+    break
+
+# Imprima el resultado final
+print(result)

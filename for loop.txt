@@ -1,0 +1,41 @@
+Descripción
+Lectura recomendada
+Un for loop en Python se utiliza para iterar sobre una secuencia (como una lista, tupla o cadena de texto) o un conjunto de elementos. Durante cada iteración, el valor en la secuencia se almacena en una variable temporal, que luego puede ser utilizada para realizar ciertas operaciones.
+
+Aquí hay un ejemplo de cómo se podría usar un for loop en Python para iterar sobre los elementos de una lista y calcular la suma total de los números en la lista:
+
+
+# Define una lista de números
+numbers = [1, 2, 3, 4, 5]
+
+# Inicializa una variable para almacenar la suma total
+total = 0
+
+# Itere sobre los elementos de la lista
+for number in numbers:
+  # Agregue el valor actual a la variable total
+  total += number
+
+# Imprima el valor final de la variable total
+print(total)
+ 
+
+Otro ejemplo de cómo se podría usar un for loop en Python es para iterar sobre un conjunto de cadenas de texto y contar cuántas veces aparece cada palabra en el conjunto:
+
+# Define un conjunto de cadenas de texto
+words = ["hello", "world", "hello", "goodbye", "world", "hello"]
+
+# Inicializa un diccionario para contar las apariciones de cada palabra
+word_counts = {}
+
+# Itere sobre cada palabra en el conjunto
+for word in words:
+  # Si la palabra ya existe en el diccionario, aumente su contador en 1
+  if word in word_counts:
+    word_counts[word] += 1
+  # Si la palabra no existe en el diccionario, agréguela con un contador de 1
+  else:
+    word_counts[word] = 1
+
+# Imprima el diccionario final con los contadores de cada palabra
+print(word_counts)
